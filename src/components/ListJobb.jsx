@@ -4,8 +4,7 @@ const ListJobb = ({ jobbs }) => (
   <div>
     {jobbs.map((jobb) => (
       <SingleCard key={jobb._id} jobb={jobb} />
-    ))}
-  </div>
+    ))}  </div>
 );
 
 export default ListJobb;

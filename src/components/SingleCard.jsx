@@ -1,17 +1,22 @@
 import { Card } from "react-bootstrap";
 
-const SingleCard = ({jobb} ) => {
-  <Card style={{ width: "12rem" }}>
-    <Card.Body>
-      <Card.Title>{jobb.company_name}</Card.Title>
-      <Card.Subtitle className="mb-2 text-muted">{jobb.title}</Card.Subtitle>
-      <Card.Text>
-        {jobb.description}
-      </Card.Text>
-      <Card.Link href="#">Card Link</Card.Link>
-      <Card.Link href="#">Another Link</Card.Link>
-    </Card.Body>
-  </Card>;
+const SingleCard = ({jobb}) => {
+return( 
+
+<>
+<tr>
+                <td>#</td>
+                <td>{jobb.company_name} </td>
+                <td>{jobb.title} </td>
+                <td>{jobb.category}</td>
+                <td>{jobb.job_type}</td>
+                <td><a></a></td>
+              </tr>
+</>
+
+)
+
+
 };
 
 export default SingleCard;

@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar1 from "./components/Navbar1.jsx";
 import Head from "./components/Head.jsx";
+import SearchResults from "./components/SearchResults.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Row>
           <Col sm={6} className="text-center background-div"></Col>
 <Head />
+<SearchResults />
           {/* <CartIndicator cartLength={cart.length} /> */}
         </Row>
         <hr />

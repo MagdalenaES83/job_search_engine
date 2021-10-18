@@ -22,14 +22,7 @@ class Navbar1 extends Component {
               <Link to="/" className="nav-link">
                 Home
               </Link>
-              <Form className="d-flex ms-4">
-                <FormControl
-                  type="search"
-                  placeholder="Search"
-                  className="mr-2"
-                  aria-label="Search"
-                />
-              </Form>
+              
             </Nav>
           </Navbar.Collapse>
         </Container>
