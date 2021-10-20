@@ -1,14 +1,17 @@
 import { withRouter } from "react-router-dom";
-import { Navbar, Nav, Form, FormControl, Container } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { BsStarFill } from "react-icons/bs";
 import { MdWork } from "react-icons/md";
 import { Component } from "react";
+               
+import { GiDandelionFlower} from "react-icons/gi"
+
+import { FaSnowflake} from "react-icons/fa"
 
 class Navbar1 extends Component {
   render() {
     return (
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar  expand="lg">
         <Container>
           <Link to="/" className="navbar-brand">
             <MdWork />
@@ -20,9 +23,16 @@ class Navbar1 extends Component {
           >
             <Nav className="mr-auto my-2 my-lg-0" navbarScroll>
               <Link to="/" className="nav-link">
-                Home
+                Home <GiDandelionFlower />
               </Link>
-              
+              <Link to="/" className="nav-link">
+                Home2 
+              </Link>
+              <Link to="/" className="nav-link">
+                Home3 
+              </Link><Link to="/" className="nav-link">
+                Home4 <FaSnowflake />
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
